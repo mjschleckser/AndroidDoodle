@@ -41,6 +41,7 @@ public class DrawView extends View {
         drawPaint.setStyle(Paint.Style.STROKE);
         drawPaint.setStrokeWidth(25);
 
+
     }
 
     @Override
@@ -60,7 +61,6 @@ public class DrawView extends View {
     public boolean onTouchEvent(MotionEvent event) {
         float x = event.getX();
         float y = event.getY();
-
         switch (event.getAction()){
             case MotionEvent.ACTION_DOWN:
                 drawPath.moveTo(x, y); break;
@@ -73,12 +73,13 @@ public class DrawView extends View {
             default:
                 Log.d("TOUCH EVENT", "Unsupported action.");
         }
-
         invalidate();
         return true;
     }
 
 
-
+    public void clearDrawing(){
+        drawCanvas.drawColor(Color.WHITE);
+    }
 
 }
