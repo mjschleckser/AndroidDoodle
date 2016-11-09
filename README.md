@@ -1,4 +1,4 @@
-# AndroidDoodle
+# Android Doodle
 A simple Android project for CMSC434.
 
 INSTRUCTIONS FOR USE:
@@ -10,7 +10,7 @@ The "save" button saves the current canvas state.
 The "load" button restores the most recently saved canvas state. 
 
 
-# SOURCES:
+# Sources:
 
 Android API:
 
